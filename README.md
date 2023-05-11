@@ -1,4 +1,4 @@
-# Eventos en React
+# Conditional rendering en React
 
 Algunos ejemplos educativos conditional rendering.
 
