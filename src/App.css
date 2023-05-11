@@ -1,0 +1,19 @@
+body {
+	overflow: hidden;
+}
+
+a {
+	padding: 0.85rem;
+	color: white;
+	text-decoration: none;
+	font-size: 0.95rem;
+}
+
+a.active {
+	color: aqua;
+}
+
+#and div,
+#and mark {
+	font-size: 1.7rem;
+}
