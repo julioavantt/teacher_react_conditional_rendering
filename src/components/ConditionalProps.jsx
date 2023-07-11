@@ -8,7 +8,7 @@ export const ConditionalProps = () => {
 
 	const myProps = condition
 		? {
-				class: "red",
+				className: "red",
 				style: { color: "blue" },
 		  }
 		: {}

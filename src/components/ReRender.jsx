@@ -9,11 +9,13 @@ export const ReRender = () => {
 
 	return (
 		<Container className="mt-4">
-			<h1 className="mb-4">Evento inline</h1>
+			<h1 className="mb-4">Re render</h1>
 			<input
 				type="text"
 				value={inputValue}
-				onChange={event => setInputValue(event.target.value)}
+				// DESCOMENTAR
+				//onChange={event => setInputValue(event.target.value)}
+				onChange={event => alert(event.target.value)}
 			/>
 		</Container>
 	)

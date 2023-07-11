@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button"
 
 const Daughter = memo(({ props }) => {
 	console.log("mi props es", props)
-	return <>Hola mama!</>
+	return <>🦄</>
 })
 
 export const Memoizable = () => {
@@ -15,10 +15,10 @@ export const Memoizable = () => {
 	return (
 		<Container className="mt-4">
 			<h1 className="mb-4">Memo</h1>
-			<Daughter /> //! no
-			<Daughter props={7} /> //! no
-			<Daughter props={num} /> //! rerenderiza
-			<Daughter props={string} /> //! no
+			<Daughter />
+			<Daughter props={7} />
+			<Daughter props={num} />
+			<Daughter props={string} />
 			<Daughter props={{ item: 4 }} />
 			<hr />
 			<Button onClick={() => setNum(prev => prev + 1)}>Actualizar</Button>
