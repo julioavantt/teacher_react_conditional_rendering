@@ -1,7 +1,5 @@
 import { useState } from "react"
-
 import Container from "react-bootstrap/Container"
-import Button from "react-bootstrap/Button"
 
 const styles = {
 	width: 200,
@@ -12,11 +10,11 @@ const styles = {
 	alignItems: "center",
 }
 
-const other = "soyunaclase"
 const noexisto = undefined
 
 export const Classes = () => {
 	const [redBg, setRedBg] = useState(true)
+	const other = "soyunaclase"
 
 	return (
 		<Container className="mt-4">
@@ -29,7 +27,10 @@ export const Classes = () => {
 				2
 			</div>
 			<hr />
-			<div className={`${redBg ? "red" : ""} ${other || ""}`} style={styles}>
+			<div
+				className={`messi ${redBg ? "red" : ""} ${other || ""}`}
+				style={styles}
+			>
 				3
 			</div>
 			<hr />
@@ -39,9 +40,9 @@ export const Classes = () => {
 			>
 				4
 			</div>
-			<Button className="mt-4" onClick={() => setRedBg(prev => !prev)}>
+			<button className="mt-4" onClick={() => setRedBg(prev => !prev)}>
 				Toggle background
-			</Button>
+			</button>
 		</Container>
 	)
 }

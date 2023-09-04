@@ -1,7 +1,5 @@
 import { useState } from "react"
-
 import Container from "react-bootstrap/Container"
-import Button from "react-bootstrap/Button"
 
 export const Style = () => {
 	const [redBg, setRedBg] = useState(true)
@@ -23,9 +21,9 @@ export const Style = () => {
 			>
 				Style
 			</h1>
-			<Button onClick={() => setRedBg(prev => !prev)}>
+			<button onClick={() => setRedBg(prev => !prev)}>
 				Toggle background
-			</Button>
+			</button>
 		</Container>
 	)
 }

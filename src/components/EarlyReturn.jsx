@@ -6,16 +6,18 @@ import products from "../data/products.json"
 
 export const EarlyReturn = () => {
 	const [list, setList] = useState([])
+	const [loading, setLoading] = useState(true)
 
 	useEffect(() => {
 		const delay = setTimeout(() => {
 			setList(products)
+			setLoading(false)
 		}, 5000)
 
 		return () => clearTimeout(delay)
 	}, [])
 
-	if (list.length < 1) {
+	if (loading) {
 		return <Container className="mt-4">Loading...</Container>
 	}
 

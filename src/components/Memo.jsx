@@ -1,6 +1,5 @@
 import { useState, memo } from "react"
 import Container from "react-bootstrap/Container"
-import Button from "react-bootstrap/Button"
 
 const Daughter = memo(({ props }) => {
 	console.log("mi props es", props)
@@ -21,7 +20,7 @@ export const Memoizable = () => {
 			<Daughter props={string} />
 			<Daughter props={{ item: 4 }} />
 			<hr />
-			<Button onClick={() => setNum(prev => prev + 1)}>Actualizar</Button>
+			<button onClick={() => setNum(prev => prev + 1)}>Actualizar</button>
 		</Container>
 	)
 }

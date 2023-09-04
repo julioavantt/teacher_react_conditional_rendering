@@ -1,7 +1,6 @@
 import { useState } from "react"
 
 import Container from "react-bootstrap/Container"
-import Button from "react-bootstrap/Button"
 
 const MeVes = () => <mark>SOY EL COMPONENTE ME VES!! ¿👀 ME VES?</mark>
 
@@ -18,9 +17,9 @@ export const And = () => {
 				</>
 			)}
 			<hr />
-			<Button onClick={() => setShowValue(prev => !prev)}>
+			<button onClick={() => setShowValue(prev => !prev)}>
 				Toggle value
-			</Button>
+			</button>
 		</Container>
 	)
 }
