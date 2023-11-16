@@ -14,8 +14,8 @@ export const ReRender = () => {
 				type="text"
 				value={inputValue}
 				// DESCOMENTAR
-				onChange={event => setInputValue(event.target.value)}
-				//onChange={event => alert(event.target.value)}
+				//onChange={event => setInputValue(event.target.value)}
+				onChange={event => console.log(event.target.value)}
 			/>
 		</Container>
 	)

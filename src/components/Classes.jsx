@@ -35,7 +35,7 @@ export const Classes = () => {
 			</div>
 			<hr />
 			<div
-				className={`${redBg ? "red" : ""} ${noexisto && "pipi"}`}
+				className={`${redBg ? "red" : ""} ${!!noexisto ? "pipi" : ""}`}
 				style={styles}
 			>
 				4

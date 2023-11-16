@@ -20,7 +20,6 @@ const Form = ({ setShowForm }) => (
 		<FormBootstrap.Group className="mb-3" controlId="formBasicCheckbox">
 			<FormBootstrap.Check type="checkbox" label="Check me out" />
 		</FormBootstrap.Group>
-		<button type="submit">Submit</button>
 		<button onClick={() => setShowForm(false)}>Cerrar form</button>
 	</FormBootstrap>
 )

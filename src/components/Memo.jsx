@@ -1,4 +1,4 @@
-import { useState, memo } from "react"
+import React, { useState, memo } from "react"
 import Container from "react-bootstrap/Container"
 
 const Daughter = memo(({ props }) => {

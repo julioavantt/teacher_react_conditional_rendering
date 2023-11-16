@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 import { Container } from "react-bootstrap"
 import LinkedInIcon from "@mui/icons-material/LinkedIn"
+import GitHubIcon from "@mui/icons-material/GitHub"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 import "./Router.css"
@@ -21,6 +22,9 @@ export const Router = () => (
 				<div>
 					<Link to="https://www.linkedin.com/in/julio-avantt/">
 						<LinkedInIcon />
+					</Link>
+					<Link to="https://www.github.com/julioavantt">
+						<GitHubIcon />
 					</Link>
 				</div>
 			</Container>

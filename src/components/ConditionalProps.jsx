@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container"
 export const ConditionalProps = () => {
 	const [condition, setCondition] = useState(true)
 
-	const styles = condition
+	const myProps = condition
 		? {
 				className: "red",
 				style: { color: "blue" },
@@ -14,7 +14,7 @@ export const ConditionalProps = () => {
 	return (
 		<Container className="mt-4">
 			<h1 className="mb-4">Conditional props</h1>
-			<h2 {...styles}>Jugando</h2>
+			<h2 {...myProps}>Jugando</h2>
 			<button className="mt-4" onClick={() => setCondition(prev => !prev)}>
 				Toggle condition
 			</button>
